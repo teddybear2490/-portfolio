@@ -1,5 +1,6 @@
+import { achievements } from "./achievements";
 import type { Project } from "@/types";
-export const projects: Project[] = [
+const previousProjects: Project[] = [
   {
     id: "approval",
     title: "보안 결재 업무 통합 시스템",
@@ -239,4 +240,34 @@ export const projects: Project[] = [
     stack: ["Ollama", "로컬 LLM", "로그 정규화", "PoC"],
     metrics: { "분석가 검토 시간": null, 오탐률: null },
   },
+];
+
+export const projects: Project[] = [
+  ...achievements.map((item, index): Project => ({
+    id: `improvement-${index}`,
+    title: item.title,
+    category: index === 0 ? "자동화" : "플랫폼",
+    status: "구현 경험",
+    summary: item.value,
+    problem: item.problem,
+    approach: item.action,
+    architecture:
+      index === 0
+        ? [
+            "위협 지표 수집",
+            "DB 저장",
+            "허용 목록 검증",
+            "담당자 승인",
+            "솔루션 연동",
+            "보고서 생성",
+          ]
+        : index === 1
+          ? ["웹 프록시", "ICAP 연동", "APT 샌드박스", "위협 지표 대응"]
+          : ["업무 기록", "이력 추적", "표준 절차", "팀 지식 공유"],
+    implementation: [item.action],
+    value: item.value,
+    stack: item.stack,
+    metrics: {},
+  })),
+  ...previousProjects.filter((p) => !["threat", "blacklist"].includes(p.id)),
 ];

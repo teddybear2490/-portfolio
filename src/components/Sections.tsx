@@ -24,7 +24,8 @@ export function About() {
         </div>
         <div className="about-copy">
           <p className="lead">
-            왜 같은 업무가 반복되는지, 무엇을 바꿔야 더 나아지는지 고민합니다.
+            보안운영의 효율화·가시성·체계화를 통해 비즈니스 연속성과 보안성의
+            균형을 추구합니다.
           </p>
           <p>
             보안운영 현장에서 문제를 발견하고 데이터·프로세스·담당자·시스템
@@ -72,7 +73,7 @@ export function Experience() {
     <section id="experience" className="section section-tinted">
       <div className="container experience-grid">
         <div>
-          <span className="eyebrow">03 / 경험</span>
+          <span className="eyebrow">02 / 경험</span>
           <h2>
             현장 경험을 바탕으로
             <br />
@@ -98,8 +99,8 @@ export function Experience() {
         <span className="eyebrow">팀과 운영</span>
         <h3>인수인계 이후에도 이어지는 지식을 만듭니다.</h3>
         <p>
-          문서화, 담당자 백업 체계, 실무 교육을 통해 소규모 팀의 일관된 운영을
-          돕습니다.
+          헬프데스크 기록·추적 시스템과 기술 역량 정의서, 온보딩 가이드 및 4단계
+          에스컬레이션 절차를 마련해 팀의 대응 일관성과 지식 자산화를 돕습니다.
         </p>
         <div className="training">
           {["오전 교육", "오후 복습", "실습 과제", "피드백"].map((item) => (

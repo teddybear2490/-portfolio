@@ -4,6 +4,10 @@ export const skills = [
     items: [
       "Check Point R81.20",
       "Symantec Endpoint Protection",
+      "Symantec SWG / DLP",
+      "Trellix APT-NX / EX",
+      "ICAP",
+      "TAP / SPAN",
       "Trellix APT / 네트워크 보안",
       "ProxySG",
       "Citrix NetScaler SSL VPN",

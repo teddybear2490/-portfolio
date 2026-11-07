@@ -15,7 +15,7 @@ export function Projects() {
     <section id="projects" className="section container">
       <div className="section-head">
         <div>
-          <span className="eyebrow">02 / 주요 프로젝트</span>
+          <span className="eyebrow">03 / 주요 프로젝트</span>
           <h2>
             운영 현장의 문제를
             <br />
@@ -36,7 +36,9 @@ export function Projects() {
             onClick={() => setFilter(item)}
           >
             {item}
-            {item === "전체 프로젝트" && <span>08</span>}
+            {item === "전체 프로젝트" && (
+              <span>{projects.length.toString().padStart(2, "0")}</span>
+            )}
           </button>
         ))}
       </div>

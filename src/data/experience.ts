@@ -3,7 +3,7 @@ export const experience = [
     period: "[근무기간]",
     title: "보안운영과 엔지니어링",
     detail:
-      "보안 모니터링, 엔드포인트·네트워크 보안, SIEM 엔지니어링 및 보안 인프라 운영을 담당합니다.",
+      "엔터프라이즈 환경에서 20종 이상의 보안 솔루션을 운영했습니다. Check Point, Symantec SWG·DLP·SEP, Trellix APT-NX/EX, Genian NAC, Splunk, Windows AD·LDAP 등을 다루며 비즈니스 연속성과 보안성의 균형을 고려했습니다.",
   },
   {
     period: "현재 담당 영역",
